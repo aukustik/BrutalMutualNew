@@ -11,17 +11,18 @@ public class Shoot : MonoBehaviour {
     Transform gun;
     Transform bulletTr;
     bool BulletFacingRight = true;
-    public bool explode = false;
-    Vector2 lel = Vector2.left + Vector2.up;
+    bool explode = false;
     // Use this for initialization
     void Start()
     {
-        gun = GameObject.Find("Gun").GetComponent<Transform>();
+        
         character = GameObject.Find("Character").GetComponent<Rigidbody2D>();
         MainCharScript kek = character.gameObject.GetComponent<MainCharScript>();
         rb = gameObject.GetComponent<Rigidbody2D>();
-        rb.position = new Vector2(gun.position.x, gun.position.y);
         gun = GameObject.Find("Gun").GetComponent<Transform>();
+        rb.position = new Vector2(gun.position.x, gun.position.y);
+        Debug.Log("rb:"+rb.position);
+        Debug.Log("gun:"+gun.position);
         if (kek.isFacingRight)
         {
             if (Input.GetKey(KeyCode.UpArrow))
@@ -55,10 +56,9 @@ public class Shoot : MonoBehaviour {
     // Update is called once per frame
     void FixedUpdate ()
     {
-        Debug.Log(direction);
+
         if (!explode)
         {
-            
             rb.MovePosition(rb.position += direction * 10 * Time.deltaTime);
             
         }
@@ -74,12 +74,10 @@ public class Shoot : MonoBehaviour {
     void OnBecameInvisible()
     {
         Destroy(this.gameObject);
-        Debug.Log("DESSTROYED~");
     }
     void Explode()
     {
         Destroy(this.gameObject);
-        Debug.Log("DESSTROYED~");
     }
     void Stop()
     {
