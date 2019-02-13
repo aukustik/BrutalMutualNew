@@ -21,28 +21,33 @@ public class Shoot : MonoBehaviour {
         rb = gameObject.GetComponent<Rigidbody2D>();
         gun = GameObject.Find("Gun").GetComponent<Transform>();
         rb.position = new Vector2(gun.position.x, gun.position.y);
-        Debug.Log("rb:"+rb.position);
-        Debug.Log("gun:"+gun.position);
+        Debug.Log("rb:" + rb.position);
+        Debug.Log("gun:" + gun.position);
         if (kek.isFacingRight)
         {
-            if (Input.GetKey(KeyCode.UpArrow))
+            if (Input.GetKey(KeyCode.UpArrow) && Input.GetKey(KeyCode.RightArrow))
             {
                 rb.rotation = 45f;
                 direction = Vector2.right + Vector2.up;
             }
             else
+
                 direction = Vector2.right;
         }
 
         if (!kek.isFacingRight)
         {
-            if (Input.GetKey(KeyCode.UpArrow))
+            if (Input.GetKey(KeyCode.UpArrow) && Input.GetKey(KeyCode.LeftArrow))
             {
                 rb.rotation = 135f;
                 direction = Vector2.left + Vector2.up;
             }
             else
+            {
                 direction = Vector2.left;
+                rb.rotation = 180f;
+            }
+                
         }
         if (!Input.GetKey(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.RightArrow) && Input.GetKey(KeyCode.UpArrow))
         {
@@ -56,25 +61,24 @@ public class Shoot : MonoBehaviour {
     // Update is called once per frame
     void FixedUpdate ()
     {
-
         if (!explode)
         {
             rb.MovePosition(rb.position += direction * 10 * Time.deltaTime);
             
         }
-        if (direction.x > 0 && !BulletFacingRight)
-        {
-            Flip();
-        }
-        else if (direction.x < 0 && BulletFacingRight)
-        {
-            Flip();
-        }
+        //if (direction.x > 0 && !BulletFacingRight)
+        //{
+        //    Flip();
+        //}
+        //else if (direction.x < 0 && BulletFacingRight)
+        //{
+        //    Flip();
+        //}
     }
-    void OnBecameInvisible()
-    {
-        Destroy(this.gameObject);
-    }
+    //void OnBecameInvisible()
+    //{
+    //    Destroy(this.gameObject);
+    //}
     void Explode()
     {
         Destroy(this.gameObject);
