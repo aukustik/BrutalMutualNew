@@ -75,10 +75,10 @@ public class Shoot : MonoBehaviour {
         //    Flip();
         //}
     }
-    //void OnBecameInvisible()
-    //{
-    //    Destroy(this.gameObject);
-    //}
+    void OnBecameInvisible()
+    {
+        Destroy(this.gameObject);
+    }
     void Explode()
     {
         Destroy(this.gameObject);
