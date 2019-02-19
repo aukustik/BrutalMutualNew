@@ -70,10 +70,20 @@ public class MainCharScript : MonoBehaviour
         }
         
     }
-
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Wall")
+        {
+            anim.SetBool("OnWall", false);
+        }
+    }
     void OnCollisionEnter2D(Collision2D coll)
     {
         isGrounded = true;
+        if (coll.gameObject.tag == "Wall")
+        {
+            anim.SetBool("OnWall", true);
+        }
     }
 
     private void Flip()

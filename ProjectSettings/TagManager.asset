@@ -9,6 +9,7 @@ TagManager:
   - PortalLeft
   - SuperBullet
   - Ground
+  - Wall
   layers:
   - Default
   - TransparentFX

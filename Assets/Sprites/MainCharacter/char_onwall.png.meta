@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 918ccdd693668914886fa87da437c630
-timeCreated: 1550565550
+timeCreated: 1550576752
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName: {}
@@ -41,15 +41,15 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 1
-  spriteExtrude: 1
+  spriteExtrude: 0
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spriteBorder: {x: 35, y: 124, z: 65, w: 199}
+  spriteBorder: {x: 65, y: 124, z: 34, w: 199}
   spritePixelsToUnits: 100
   alphaUsage: 1
   alphaIsTransparency: 1
-  spriteTessellationDetail: -1
+  spriteTessellationDetail: 0
   textureType: 8
   textureShape: 1
   maxTextureSizeSet: 0
@@ -65,11 +65,135 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
   spriteSheet:
     serializedVersion: 2
     sprites: []
-    outline: []
-    physicsShape: []
+    outline:
+    - - {x: -138.5, y: 344}
+      - {x: -138.5, y: -344}
+      - {x: 138.5, y: -344}
+      - {x: 138.5, y: 344}
+    physicsShape:
+    - - {x: 5.5, y: -185}
+      - {x: 15.5, y: -169}
+      - {x: 15.5, y: -143}
+      - {x: 5.5, y: -128}
+      - {x: -6.5, y: -128}
+      - {x: -10.5, y: -139}
+      - {x: -5.5, y: -169}
+      - {x: -17.5, y: -184}
+      - {x: -17.5, y: -218}
+      - {x: -11.5, y: -221}
+      - {x: -3.5, y: -221}
+      - {x: -0.5, y: -217}
+      - {x: 0.5, y: -212}
+      - {x: -0.5, y: -192}
+    - - {x: -40.5, y: -127}
+      - {x: -35.5, y: -120}
+      - {x: -35.5, y: -112}
+      - {x: -39.5, y: -109}
+      - {x: -61.5, y: -109}
+      - {x: -70.5, y: -111}
+      - {x: -74.5, y: -113}
+      - {x: -84.5, y: -148}
+      - {x: -87.5, y: -143}
+      - {x: -103.5, y: -142}
+      - {x: -104.5, y: -147}
+      - {x: -104.5, y: -157}
+      - {x: -87.5, y: -174}
+      - {x: -73.5, y: -174}
+      - {x: -66.5, y: -159}
+      - {x: -60.5, y: -132}
+      - {x: -55.5, y: -127}
+    - - {x: 7.5, y: -102}
+      - {x: 1.5, y: -78}
+      - {x: -5.5, y: -43}
+      - {x: -9.5, y: -24}
+      - {x: -12.5, y: -5}
+      - {x: -19.5, y: 5}
+      - {x: -27.5, y: 8}
+      - {x: -38.5, y: 9}
+      - {x: -44.5, y: 8}
+      - {x: -49.5, y: 6}
+      - {x: -55.5, y: 1}
+      - {x: -57.5, y: -2}
+      - {x: -57.5, y: -15}
+      - {x: -53.5, y: -29}
+      - {x: -51.5, y: -38}
+      - {x: -47.5, y: -57}
+      - {x: -36.5, y: -109}
+      - {x: -33.5, y: -117}
+      - {x: -27.5, y: -125}
+      - {x: -7.5, y: -125}
+      - {x: -3.5, y: -124}
+      - {x: 4.5, y: -119}
+      - {x: 7.5, y: -115}
+    - - {x: -56.5, y: -16}
+      - {x: -60.5, y: -9}
+      - {x: -70.5, y: -9}
+      - {x: -75.5, y: -12}
+      - {x: -79.5, y: -32}
+      - {x: -90.5, y: -16}
+      - {x: -101.5, y: -15}
+      - {x: -104.5, y: -21}
+      - {x: -104.5, y: -28}
+      - {x: -80.5, y: -67}
+      - {x: -74.5, y: -72}
+      - {x: -69.5, y: -72}
+      - {x: -66.5, y: -71}
+      - {x: -62.5, y: -68}
+      - {x: -59.5, y: -57}
+      - {x: -56.5, y: -33}
+    - - {x: 30.5, y: -30}
+      - {x: 23.5, y: -25}
+      - {x: 14.5, y: -3}
+      - {x: 9.5, y: 3}
+      - {x: 6.5, y: 4}
+      - {x: -0.5, y: 4}
+      - {x: -5.5, y: 3}
+      - {x: -6.5, y: -3}
+      - {x: -6.5, y: -13}
+      - {x: 1.5, y: -35}
+      - {x: 9.5, y: -50}
+      - {x: 23.5, y: -50}
+      - {x: 67.5, y: -34}
+      - {x: 73.5, y: -26}
+      - {x: 73.5, y: -20}
+      - {x: 61.5, y: -12}
+    - - {x: 27.5, y: 58}
+      - {x: 30.5, y: 63}
+      - {x: 30.5, y: 92}
+      - {x: 26.5, y: 104}
+      - {x: 20.5, y: 116}
+      - {x: -3.5, y: 138}
+      - {x: -12.5, y: 142}
+      - {x: -27.5, y: 145}
+      - {x: -49.5, y: 145}
+      - {x: -62.5, y: 141}
+      - {x: -78.5, y: 130}
+      - {x: -88.5, y: 121}
+      - {x: -98.5, y: 105}
+      - {x: -102.5, y: 92}
+      - {x: -102.5, y: 69}
+      - {x: -98.5, y: 52}
+      - {x: -89.5, y: 37}
+      - {x: -76.5, y: 26}
+      - {x: -68.5, y: 20}
+      - {x: -57.5, y: 14}
+      - {x: -47.5, y: 12}
+      - {x: -22.5, y: 12}
+      - {x: -9.5, y: 16}
+      - {x: 5.5, y: 25}
+      - {x: 19.5, y: 41}
   spritePackingTag: 
   userData: 
   assetBundleName: 

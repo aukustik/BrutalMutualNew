@@ -165,7 +165,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 3.6156962
+  orthographic size: 2.3528068
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -187,11 +187,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 41771423}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.7339244, y: 0.15337467, z: -10}
+  m_LocalPosition: {x: -3.72, y: -1.37, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &41771428
 MonoBehaviour:
@@ -635,7 +635,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.08523917, y: 0.434381}
+  m_Offset: {x: 0.08523917, y: -0.065926194}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -646,7 +646,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.5111473, y: 5.239847}
+  m_Size: {x: 1.5111473, y: 4.239233}
   m_EdgeRadius: 0
 --- !u!212 &562599271
 SpriteRenderer:
@@ -701,8 +701,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 562599266}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.23, y: -1.81, z: 0}
-  m_LocalScale: {x: 0.4276514, y: 0.40481952, z: 1}
+  m_LocalPosition: {x: -4.429, y: -2.201, z: 0}
+  m_LocalScale: {x: 0.21479163, y: 0.21789292, z: 1}
   m_Children:
   - {fileID: 1721895556}
   - {fileID: 794514940}
@@ -896,7 +896,7 @@ GameObject:
   - component: {fileID: 841600234}
   m_Layer: 0
   m_Name: BorderLeft
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1996,7 +1996,7 @@ Transform:
   - {fileID: 2110005840}
   - {fileID: 1735024936}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1822120219
 MonoBehaviour:
