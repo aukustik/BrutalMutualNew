@@ -24,6 +24,7 @@ public class MainCharScript : MonoBehaviour
     private bool onground = false;
     private Transform gun;
     private bool isGrounded = true;
+    private bool OnWall = false;
 
     // Use this for initialization
     void Start()
@@ -56,6 +57,10 @@ public class MainCharScript : MonoBehaviour
         {
             Flip();
         }
+        if (OnWall)
+        {
+            rigid.AddForce(Vector2.right*move, ForceMode2D.Impulse);
+        }
     }
     private void Update()
     {
@@ -75,14 +80,16 @@ public class MainCharScript : MonoBehaviour
         if (collision.gameObject.tag == "Wall")
         {
             anim.SetBool("OnWall", false);
+            OnWall = false;
         }
     }
-    void OnCollisionEnter2D(Collision2D coll)
+    void OnCollisionEnter2D(Collision2D collision)
     {
         isGrounded = true;
-        if (coll.gameObject.tag == "Wall")
+        if (collision.gameObject.tag == "Wall")
         {
             anim.SetBool("OnWall", true);
+            OnWall = true;
         }
     }
 

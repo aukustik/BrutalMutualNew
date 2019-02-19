@@ -10,8 +10,8 @@ public class Portal : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        enemyrigid = enemy.GetComponent<Rigidbody2D>();
-        InvokeRepeating("CreateEnemy", 0, 3);
+        //enemyrigid = enemy.GetComponent<Rigidbody2D>();
+        //InvokeRepeating("CreateEnemy", 0, 3);
     }
 	// Update is called once per frame
 	void Update () {

@@ -21,8 +21,8 @@ public class Shoot : MonoBehaviour {
         rb = gameObject.GetComponent<Rigidbody2D>();
         gun = GameObject.Find("Gun").GetComponent<Transform>();
         rb.position = new Vector2(gun.position.x, gun.position.y);
+        Debug.ClearDeveloperConsole();
         Debug.Log("rb:" + rb.position);
-        Debug.Log("gun:" + gun.position);
         if (kek.isFacingRight)
         {
             if (Input.GetKey(KeyCode.UpArrow) && Input.GetKey(KeyCode.RightArrow))
@@ -32,7 +32,7 @@ public class Shoot : MonoBehaviour {
             }
             else
 
-                direction = Vector2.right;
+                direction = Vector2.right*2f;
         }
 
         if (!kek.isFacingRight)
